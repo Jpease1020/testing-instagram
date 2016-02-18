@@ -11,14 +11,23 @@ class InstagramService
     end
   end
 
-  def all
-    # response = connection.get('users/self/media/recent/')
-    response = connection.get do |req|
-      req.url 'users/self/media/recent/'
-      req.params['scope'] = "basic" + "public_content"
-    end
-    Instagrams.new(response).all_grams.map do |gram|
+  def all_grams
+    response = connection.get('users/self/media/recent/')
+    grams = Instagrams.new(response).all_grams.map do |gram|
       build_object(gram)
+    end
+    grams.each do |gram|
+      build_object(gram).comments[:comms] = comments(gram.id)
+    end
+  end
+
+  def comments(id)
+    response = connection.get do |req|
+      req.url "media/#{id}/comments"
+      req.params['scope'] = "basic\ public_content"
+    end
+    Instagrams.new(response).comments.map do |comment|
+      build_object(comment)
     end
   end
 
@@ -31,20 +40,6 @@ end
 
 
 
-
-
-
-
-
-
-
-
-# conn = Faraday.new(:url => 'http://sushi.com') do |faraday|
-#   faraday.request  :url_encoded             # form-encode POST params
-#   faraday.response :logger                  # log requests to STDOUT
-#   faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
-# end
-#
 # ## GET ##
 #
 # response = conn.get '/nigiri/sake.json'     # GET http://sushi.com/nigiri/sake.json
@@ -66,12 +61,4 @@ end
 #   req.url '/nigiri'
 #   req.headers['Content-Type'] = 'application/json'
 #   req.body = '{ "name": "Unagi" }'
-# end
-#
-# ## Per-request options ##
-#
-# conn.get do |req|
-#   req.url '/search'
-#   req.options.timeout = 5           # open/read timeout in seconds
-#   req.options.open_timeout = 2      # connection open timeout in seconds
 # end

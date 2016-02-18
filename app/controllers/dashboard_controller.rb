@@ -7,6 +7,7 @@ class DashboardController < ApplicationController
 
   def index
     @user = User.find(current_user)
-    @golden_grams = service.all
+    @golden_grams = service.all_grams
+    # byebug
   end
 end
