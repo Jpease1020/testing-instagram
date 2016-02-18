@@ -13,14 +13,17 @@ class InstagramService
 
   def all
     response = connection.get('users/self/media/recent/')
-    parse(response)
+    grams = Instagrams.new(response).all_grams.map do |gram|
+      build_object(gram)
+    end
+    grams
   end
 
   private
 
-  def parse(response)
-    JSON.parse(response.body, symbolize_names: true)
-  end
+    def build_object(data)
+      OpenStruct.new(data)
+    end
 end
 
 
