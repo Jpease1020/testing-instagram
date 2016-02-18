@@ -3,4 +3,10 @@ Hi user
 
 <%= button_to "logout", logout_path, method: 'delete' %>
 
-<%= @most_recent_post %>
+<% @golden_grams.each do |gram| %>
+  <%= gram.images[:standard_resolution] %>
+  <%= gram.caption[:text] %>
+  <%= gram.tags %>
+  <%= gram.likes.count %>
+  <%= gram.users_in_photo %>
+<% end %>
