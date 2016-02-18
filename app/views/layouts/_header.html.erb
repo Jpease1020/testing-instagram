@@ -6,7 +6,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
-          <li><%= link_to "logout", logout_path, method: "destroy" %><li>
+          <li><%= link_to "logout", logout_path, method: "delete" %><li>
           <% elsif !current_user || logged_out? %>
           <li><%= link_to "Login", login_path %></li>
         <% end %>

@@ -12,7 +12,11 @@ class InstagramService
   end
 
   def all
-    response = connection.get('users/self/media/recent/')
+    # response = connection.get('users/self/media/recent/')
+    response = connection.get do |req|
+      req.url 'users/self/media/recent/'
+      req.params['scope'] = "basic" + "public_content"
+    end
     Instagrams.new(response).all_grams.map do |gram|
       build_object(gram)
     end
