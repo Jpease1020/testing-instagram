@@ -1,11 +1,23 @@
-class UserGrams
+class InstagramPost
+  attr_reader :id, :text
 
-  def self.service
-    InstagramService.new
+  def initialize(post = {})
+    @id = post[:id]
+    @text = post[:text]
   end
-
-  def self.most_recent_post(user)
-    service.most_recent_post(user)
-  end
-  
 end
+
+
+
+
+  # def self.service(user)
+  #   InstagramService.new(user)
+  # end
+  #
+  # def self.most_recent_post(user)
+  #   new(service(user).most_recent_post)
+  # end
+  #
+  # def self.find_post(post_id)
+  #   new(service(user).find_post(id))
+  # end

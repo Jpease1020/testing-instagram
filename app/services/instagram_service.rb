@@ -2,21 +2,35 @@ class InstagramService
 
   attr_reader :connection
 
-  def initialize
+  def initialize(user)
     @connection = Faraday.new(url: 'https://api.instagram.com/v1/') do |faraday|
       faraday.request  :url_encoded             # form-encode POST params
       faraday.response :logger                  # log requests to STDOUT
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
+      faraday.params[:access_token] = user.token
     end
   end
 
-  def most_recent_post(user)
-    connection.get do |req|
-      req.url 'users/self/media/recent/'
-      req.params['access_token'] = user.token
-    end
+  def all
+    response = connection.get('users/self/media/recent/')
+    parse(response)
+  end
+
+  private
+
+  def parse(response)
+    JSON.parse(response.body, symbolize_names: true)
   end
 end
+
+
+
+
+
+
+
+
+
 
 
 # conn = Faraday.new(:url => 'http://sushi.com') do |faraday|
