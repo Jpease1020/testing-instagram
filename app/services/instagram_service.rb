@@ -13,10 +13,9 @@ class InstagramService
 
   def all
     response = connection.get('users/self/media/recent/')
-    grams = Instagrams.new(response).all_grams.map do |gram|
+    Instagrams.new(response).all_grams.map do |gram|
       build_object(gram)
     end
-    grams
   end
 
   private

@@ -1,12 +1,25 @@
-Hi user
-<%= @user.username %>
-
-<%= button_to "logout", logout_path, method: 'delete' %>
-
-<% @golden_grams.each do |gram| %>
-  <%= gram.images[:standard_resolution] %>
-  <%= gram.caption[:text] %>
-  <%= gram.tags %>
-  <%= gram.likes.count %>
-  <%= gram.users_in_photo %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <%= image_tag @user.image_url %>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <ul>
+        <h2>Hey <%= @user.username %></h2>
+        <h5><%= @user.name %></h5>
+      </ul>
+    </div>
+  </div>
+</div><br><br>
+<div class="container">
+  <div class="row col-sm-12 col-md-12 col-lg-12">
+    <% @golden_grams.each do |gram| %>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <%= image_tag gram.images[:standard_resolution][:url], size: "291x291" %>
+        <%= gram.caption[:text] %>
+        <!-- <%= gram.tags %> -->
+        <i class="glyphicon glyphicon-heart"></i><%= gram.likes[:count] %>
+      </div>
+    <% end %>
+  </div>
+</div>
