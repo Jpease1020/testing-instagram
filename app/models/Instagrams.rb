@@ -6,9 +6,12 @@ class Instagrams
   end
 
   def all_grams
-    @response
-    response = parse(@response)
-    response = build_object(response)
+    response = build_object(parse(@response))
+    response.data
+  end
+
+  def comments
+    response = build_object(parse(@response))
     response.data
   end
 
