@@ -11,10 +11,9 @@ class InstagramService
     end
   end
 
-  def most_recent_post
+  def all
     response = connection.get('users/self/media/recent/')
-    response = parse(response)
-    byebug
+    parse(response)
   end
 
   private

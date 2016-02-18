@@ -5,11 +5,15 @@ class InstagramPost
     @id = post[:id]
     @text = post[:text]
   end
+end
+
+
+
 
   # def self.service(user)
   #   InstagramService.new(user)
   # end
-  # 
+  #
   # def self.most_recent_post(user)
   #   new(service(user).most_recent_post)
   # end
@@ -17,5 +21,3 @@ class InstagramPost
   # def self.find_post(post_id)
   #   new(service(user).find_post(id))
   # end
-
-end
