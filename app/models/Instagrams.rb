@@ -6,13 +6,11 @@ class Instagrams
   end
 
   def all_grams
-    response = build_object(parse(@response))
-    response.data
+    build_object(parse(@response)).data
   end
 
   def comments
-    response = build_object(parse(@response))
-    response.data
+    build_object(parse(@response)).data
   end
 
 
@@ -26,18 +24,3 @@ class Instagrams
       JSON.parse(response.body, symbolize_names: true)
     end
 end
-
-
-
-
-  # def self.service(user)
-  #   InstagramService.new(user)
-  # end
-  #
-  # def self.most_recent_post(user)
-  #   new(service(user).most_recent_post)
-  # end
-  #
-  # def self.find_post(post_id)
-  #   new(service(user).find_post(id))
-  # end

@@ -11,7 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
 gem 'omniauth-instagram'
 gem 'faraday'
-
+gem 'rspec'
 
 group :development, :test do
   gem 'byebug'
@@ -19,6 +19,9 @@ group :development, :test do
   gem 'launchy'
   gem 'pry-rails'
   gem 'simplecov'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do

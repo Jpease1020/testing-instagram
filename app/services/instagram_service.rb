@@ -4,8 +4,6 @@ class InstagramService
 
   def initialize(user)
     @connection = Faraday.new(url: 'https://api.instagram.com/v1/') do |faraday|
-      faraday.request  :url_encoded             # form-encode POST params
-      faraday.response :logger                  # log requests to STDOUT
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
       faraday.params[:access_token] = user.token
     end
@@ -22,10 +20,7 @@ class InstagramService
   end
 
   def comments(id)
-    response = connection.get do |req|
-      req.url "media/#{id}/comments"
-      req.params['scope'] = "basic\ public_content"
-    end
+    response = connection.get("media/#{id}/comments")
     Instagrams.new(response).comments.map do |comment|
       build_object(comment)
     end
