@@ -25,7 +25,7 @@ class InstagramService
   end
 
   def delete_comment(media_id, comment_id)
-    connection.delete("media/#{media-id}/comments/#{comment-id}")
+    connection.delete("media/#{media_id}/comments/#{comment_id}")
   end
 
   def followers
