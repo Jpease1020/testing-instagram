@@ -22,9 +22,11 @@
           <i class="glyphicon glyphicon-heart"></i><%= gram.likes_count %>
         </div><br><br>
         <div class="row col-sm-12 col-md-12 col-lg-12">
+          <ul>
           <% gram.comments.each do |comment| %>
-            <%= comment %>
+            <li><%= comment.commenter %>: <%= comment.text %></li>
           <% end %>
+        </ul>
         </div>
         <%= form_tag(comments_path, :method => "post") do %>
             <%= text_field_tag :comment, params[:comment], placeholder: "make a comment" %>

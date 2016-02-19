@@ -14,10 +14,7 @@ class InstagramService
   end
 
   def comments(id)
-    comments = build_object(parse(connection.get("media/#{id}/comments"))).data
-    comments.map do |comment|
-      comment[:text]
-    end
+    build_object(parse(connection.get("media/#{id}/comments"))).data
   end
 
   def create_comment(comment, id)
@@ -25,6 +22,10 @@ class InstagramService
       req.url "media/#{id}/comments"
       req.body = "text=#{comment}"
     end
+  end
+
+  def delete_comment(media_id, comment_id)
+    connection.delete("media/#{media-id}/comments/#{comment-id}")
   end
 
   def followers

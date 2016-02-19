@@ -14,9 +14,5 @@ RSpec.describe "user views friend index page", type: :feature do
         expect(page).to have_content("These are the people who follow you.  They are followers")
       end
     end
-
-    scenario "user clicks ona  link to see a followers page" do
-
-    end
   end
 end

@@ -24,6 +24,12 @@ class Instagram
 
   def self.get_comments(user, id)
     comments = InstagramService.new(user).comments(id)
+    comments.map do |comment|
+      Comment.new(comment[:id],
+                  comment[:text],
+                  comment[:from][:username],
+                  comment[:from][:id])
+    end
   end
 
 end
