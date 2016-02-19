@@ -11,12 +11,14 @@ class InstagramService
 
   def all_grams
     response = connection.get('users/self/media/recent/')
-    grams = Instagrams.new(response).all_grams.map do |gram|
-      build_object(gram)
-    end
-    grams.each do |gram|
-      build_object(gram).comments[:comms] = comments(gram.id)
-    end
+    # grams = Instagrams.new(response).all_grams.map do |gram|
+    #   build_object(gram)
+    # end
+    byebug
+    # grams.each do |gram|
+    #   build_object(gram).comments[:comms] = comments(gram.id)
+    # end
+    grams = Instagrams.new(response).all_grams
   end
 
   def comments(id)
