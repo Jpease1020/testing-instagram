@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '499'
+      - '486'
       Content-Language:
       - en
       Expires:
@@ -33,15 +33,15 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Thu, 18 Feb 2016 22:44:16 GMT
+      - Fri, 19 Feb 2016 03:55:28 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=6afc98087d87ba60beeb54af2957eef3; expires=Thu, 16-Feb-2017 22:44:16
+      - csrftoken=33a3e1b348c8243748cef84d690c5349; expires=Fri, 17-Feb-2017 03:55:28
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Thu, 18-Feb-2016 23:44:16 GMT; Max-Age=3600; Path=/
-      - sessionid=IGSCb4caf49e992df069fbef7073721d76e8e98ff4686d107423e6b22ad353e5c275%3AGVMw7xYixAkiFoCcb65BUvHRHkzDRGwB%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455835456%7D%7D;
-        expires=Wed, 18-May-2016 22:44:16 GMT; httponly; Max-Age=7776000; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 04:55:28 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC5ea669d41831f8ecbee617f5a483c44adcd88c84759d1ffdb015a224251b8158%3Ag2H6uRDVPuxaJsWxmPQNGXJ1cYnOUy8s%3A%7B%22asns%22%3A%7B%2265.128.15.122%22%3A209%2C%22time%22%3A1455854128%7D%7D;
+        expires=Thu, 19-May-2016 03:55:28 GMT; httponly; Max-Age=7776000; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -86,7 +86,7 @@ http_interactions:
         "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
         "id": "224650346", "full_name": "Justin Pease"}}]}'
     http_version: 
-  recorded_at: Thu, 18 Feb 2016 22:44:16 GMT
+  recorded_at: Fri, 19 Feb 2016 03:55:28 GMT
 - request:
     method: get
     uri: https://api.instagram.com/v1/media/1187096446395313964_224650346/comments?access_token=224650346.7d7f826.ef7392aae6934a919523fc1e67582216
@@ -106,7 +106,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '498'
+      - '485'
       Content-Language:
       - en
       Expires:
@@ -120,15 +120,15 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Thu, 18 Feb 2016 22:44:17 GMT
+      - Fri, 19 Feb 2016 03:55:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=ab941b7762833deffa15e907c7b591c8; expires=Thu, 16-Feb-2017 22:44:17
+      - csrftoken=f564ba92b97256d176f5e793c8673d1b; expires=Fri, 17-Feb-2017 03:55:29
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Thu, 18-Feb-2016 23:44:17 GMT; Max-Age=3600; Path=/
-      - sessionid=IGSC4944abd1ff36654d902564f4c804ddab8c1c33306ba577a93b2fe0e1a2e0c47c%3ACQ3GTsSujfH4wuE1zWA5EnSExXyAvMN3%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455835457%7D%7D;
-        expires=Wed, 18-May-2016 22:44:17 GMT; httponly; Max-Age=7776000; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 04:55:29 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC41d3a232d4cf2ec7180f54f7532e461ecef3d63fe920bc817f9e061419859c16%3AunNJQRnXjaPlMd81eJAmA1DoV69phuQj%3A%7B%22asns%22%3A%7B%2265.128.15.122%22%3A209%2C%22time%22%3A1455854129%7D%7D;
+        expires=Thu, 19-May-2016 03:55:29 GMT; httponly; Max-Age=7776000; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -143,7 +143,7 @@ http_interactions:
         "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
         "id": "269242292", "full_name": "Penney Gadget"}, "id": "1187862649099349490"}]}'
     http_version: 
-  recorded_at: Thu, 18 Feb 2016 22:44:16 GMT
+  recorded_at: Fri, 19 Feb 2016 03:55:29 GMT
 - request:
     method: get
     uri: https://api.instagram.com/v1/media/1187096090215018270_224650346/comments?access_token=224650346.7d7f826.ef7392aae6934a919523fc1e67582216
@@ -163,7 +163,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '497'
+      - '484'
       Content-Language:
       - en
       Expires:
@@ -177,15 +177,15 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Thu, 18 Feb 2016 22:44:17 GMT
+      - Fri, 19 Feb 2016 03:55:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=60b2d465a8511ed2008ecc9820f51c43; expires=Thu, 16-Feb-2017 22:44:17
+      - csrftoken=c1413ffd78456bbe914a5c25088ae78e; expires=Fri, 17-Feb-2017 03:55:29
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Thu, 18-Feb-2016 23:44:17 GMT; Max-Age=3600; Path=/
-      - sessionid=IGSC659c420097d9cbe7788393166cbf918cde0bb825dd96ecf75a2837fefa9c8f7f%3AN4BpHrJRm60rPGrQawzVKnfSeTVVnQaC%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455835457%7D%7D;
-        expires=Wed, 18-May-2016 22:44:17 GMT; httponly; Max-Age=7776000; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 04:55:29 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCec3a2c158201a759f852a4b81fd6536be77421cf39a3ec98fe4f5e22198a4ab8%3AuXNXl6Pd8IkWROFGeP7IcATnZG0fhuVh%3A%7B%22asns%22%3A%7B%2265.128.15.122%22%3A209%2C%22time%22%3A1455854129%7D%7D;
+        expires=Thu, 19-May-2016 03:55:29 GMT; httponly; Max-Age=7776000; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -197,7 +197,7 @@ http_interactions:
         "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
         "id": "224650346", "full_name": "Justin Pease"}, "id": "1187389020708368238"}]}'
     http_version: 
-  recorded_at: Thu, 18 Feb 2016 22:44:17 GMT
+  recorded_at: Fri, 19 Feb 2016 03:55:29 GMT
 - request:
     method: get
     uri: https://api.instagram.com/v1/media/284084603378298570_224650346/comments?access_token=224650346.7d7f826.ef7392aae6934a919523fc1e67582216
@@ -217,7 +217,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '496'
+      - '483'
       Content-Language:
       - en
       Expires:
@@ -231,15 +231,15 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Thu, 18 Feb 2016 22:44:17 GMT
+      - Fri, 19 Feb 2016 03:55:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=9b021c892033df387f390546c79dddf9; expires=Thu, 16-Feb-2017 22:44:17
+      - csrftoken=479cc7be3a801764b515215568c8e174; expires=Fri, 17-Feb-2017 03:55:29
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Thu, 18-Feb-2016 23:44:17 GMT; Max-Age=3600; Path=/
-      - sessionid=IGSC46a58037a002a86f5125f92ad3c9ac91e71d17d5d8877783f8ee4840c995c027%3ACf5LaiYEpI9gidCMDN9sCusecFdoZXW5%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455835457%7D%7D;
-        expires=Wed, 18-May-2016 22:44:17 GMT; httponly; Max-Age=7776000; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 04:55:29 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC1e48b5ce57b5f293b95344c2ea1e8ed01c984cefb7689e2da2ca38f9a35bba68%3Ah0Xe4KcVml1ojFVdCif5c6Y2yf5ZSPxD%3A%7B%22asns%22%3A%7B%2265.128.15.122%22%3A209%2C%22time%22%3A1455854129%7D%7D;
+        expires=Thu, 19-May-2016 03:55:29 GMT; httponly; Max-Age=7776000; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -251,5 +251,5 @@ http_interactions:
         "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
         "id": "224650346", "full_name": "Justin Pease"}, "id": "1187389173523640178"}]}'
     http_version: 
-  recorded_at: Thu, 18 Feb 2016 22:44:17 GMT
+  recorded_at: Fri, 19 Feb 2016 03:55:30 GMT
 recorded_with: VCR 3.0.1
