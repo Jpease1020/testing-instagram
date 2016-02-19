@@ -1,0 +1,255 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/users/self/media/recent/?access_token=224650346.7d7f826.ef7392aae6934a919523fc1e67582216
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '499'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Thu, 18 Feb 2016 22:44:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=6afc98087d87ba60beeb54af2957eef3; expires=Thu, 16-Feb-2017 22:44:16
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Thu, 18-Feb-2016 23:44:16 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCb4caf49e992df069fbef7073721d76e8e98ff4686d107423e6b22ad353e5c275%3AGVMw7xYixAkiFoCcb65BUvHRHkzDRGwB%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455835456%7D%7D;
+        expires=Wed, 18-May-2016 22:44:16 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '824'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {}, "meta": {"code": 200}, "data": [{"attribution":
+        null, "tags": [], "type": "image", "location": null, "comments": {"count":
+        3}, "filter": "Normal", "created_time": "1455732945", "link": "https://www.instagram.com/p/BB5ae2xhW8s/",
+        "likes": {"count": 4}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10299831_224883447855873_746858986_n.jpg?ig_cache_key=MTE4NzA5NjQ0NjM5NTMxMzk2NA%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/10299831_224883447855873_746858986_n.jpg?ig_cache_key=MTE4NzA5NjQ0NjM5NTMxMzk2NA%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/10299831_224883447855873_746858986_n.jpg?ig_cache_key=MTE4NzA5NjQ0NjM5NTMxMzk2NA%3D%3D.2",
+        "width": 612, "height": 612}}, "users_in_photo": [], "caption": {"created_time":
+        "1455732945", "text": "Sometimes not so much!", "from": {"username": "justinpease1",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "1187096449264218100"},
+        "user_has_liked": false, "id": "1187096446395313964_224650346", "user": {"username":
+        "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": null, "comments": {"count": 1}, "filter":
+        "Normal", "created_time": "1455732903", "link": "https://www.instagram.com/p/BB5aZrDhW8e/",
+        "likes": {"count": 3}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/12748265_1509135739393730_56510602_n.jpg?ig_cache_key=MTE4NzA5NjA5MDIxNTAxODI3MA%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/12748265_1509135739393730_56510602_n.jpg?ig_cache_key=MTE4NzA5NjA5MDIxNTAxODI3MA%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/12748265_1509135739393730_56510602_n.jpg?ig_cache_key=MTE4NzA5NjA5MDIxNTAxODI3MA%3D%3D.2",
+        "width": 612, "height": 612}}, "users_in_photo": [], "caption": {"created_time":
+        "1455732903", "text": "Sometimes they come out ok.", "from": {"username":
+        "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "1187096093151031246"},
+        "user_has_liked": false, "id": "1187096090215018270_224650346", "user": {"username":
+        "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": null, "comments": {"count": 1}, "filter":
+        "Normal", "created_time": "1348085545", "link": "https://www.instagram.com/p/PxRXEOhW7K/",
+        "likes": {"count": 1}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/11208265_1604105449828280_1973022690_n.jpg?ig_cache_key=Mjg0MDg0NjAzMzc4Mjk4NTcw.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/11208265_1604105449828280_1973022690_n.jpg?ig_cache_key=Mjg0MDg0NjAzMzc4Mjk4NTcw.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/11208265_1604105449828280_1973022690_n.jpg?ig_cache_key=Mjg0MDg0NjAzMzc4Mjk4NTcw.2",
+        "width": 612, "height": 612}}, "users_in_photo": [], "caption": {"created_time":
+        "1348085545", "text": "Love the message!", "from": {"username": "justinpease1",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "284084621011152336"},
+        "user_has_liked": false, "id": "284084603378298570_224650346", "user": {"username":
+        "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}}]}'
+    http_version: 
+  recorded_at: Thu, 18 Feb 2016 22:44:16 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1187096446395313964_224650346/comments?access_token=224650346.7d7f826.ef7392aae6934a919523fc1e67582216
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '498'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Thu, 18 Feb 2016 22:44:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=ab941b7762833deffa15e907c7b591c8; expires=Thu, 16-Feb-2017 22:44:17
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Thu, 18-Feb-2016 23:44:17 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC4944abd1ff36654d902564f4c804ddab8c1c33306ba577a93b2fe0e1a2e0c47c%3ACQ3GTsSujfH4wuE1zWA5EnSExXyAvMN3%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455835457%7D%7D;
+        expires=Wed, 18-May-2016 22:44:17 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '372'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"created_time": "1455767793", "text":
+        "funny because I could have taken off the skin and eaten the rest.", "from":
+        {"username": "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "1187388768983019358"},
+        {"created_time": "1455824284", "text": "Mmmmmmm", "from": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}, "id": "1187862649099349490"}]}'
+    http_version: 
+  recorded_at: Thu, 18 Feb 2016 22:44:16 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1187096090215018270_224650346/comments?access_token=224650346.7d7f826.ef7392aae6934a919523fc1e67582216
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '497'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Thu, 18 Feb 2016 22:44:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=60b2d465a8511ed2008ecc9820f51c43; expires=Thu, 16-Feb-2017 22:44:17
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Thu, 18-Feb-2016 23:44:17 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC659c420097d9cbe7788393166cbf918cde0bb825dd96ecf75a2837fefa9c8f7f%3AN4BpHrJRm60rPGrQawzVKnfSeTVVnQaC%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455835457%7D%7D;
+        expires=Wed, 18-May-2016 22:44:17 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '279'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"created_time": "1455767823", "text":
+        "this makes it seem like i know something about cooking", "from": {"username":
+        "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "1187389020708368238"}]}'
+    http_version: 
+  recorded_at: Thu, 18 Feb 2016 22:44:17 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/284084603378298570_224650346/comments?access_token=224650346.7d7f826.ef7392aae6934a919523fc1e67582216
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '496'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Thu, 18 Feb 2016 22:44:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=9b021c892033df387f390546c79dddf9; expires=Thu, 16-Feb-2017 22:44:17
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Thu, 18-Feb-2016 23:44:17 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC46a58037a002a86f5125f92ad3c9ac91e71d17d5d8877783f8ee4840c995c027%3ACf5LaiYEpI9gidCMDN9sCusecFdoZXW5%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455835457%7D%7D;
+        expires=Wed, 18-May-2016 22:44:17 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '265'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"created_time": "1455767841", "text":
+        "this reminds me of Katie Kenyhertz", "from": {"username": "justinpease1",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "1187389173523640178"}]}'
+    http_version: 
+  recorded_at: Thu, 18 Feb 2016 22:44:17 GMT
+recorded_with: VCR 3.0.1

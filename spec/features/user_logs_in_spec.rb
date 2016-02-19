@@ -6,11 +6,6 @@ RSpec.describe "user logs in", type: :feature do
       visit '/'
       click_on "Login"
       expect(current_path).to eq(dashboard_index_path)
-      save_and_open_page
     end
-  end
-
-  it "should have pictures on the page" do
-    
   end
 end
