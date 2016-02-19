@@ -21,7 +21,6 @@ group :development, :test do
   gem 'simplecov'
   gem 'rspec-rails', '~> 3.0'
   gem 'vcr'
-  gem 'webmock'
   gem 'database_cleaner'
   gem 'simplecov'
 end
@@ -31,6 +30,7 @@ group :development do
 end
 
 group :test do
+  gem 'webmock'
   gem 'vcr'
   gem 'webmock'
 end

@@ -10,28 +10,26 @@ class InstagramService
   end
 
   def all_grams
-    response = connection.get('users/self/media/recent/')
-    # grams = Instagrams.new(response).all_grams.map do |gram|
-    #   build_object(gram)
-    # end
-    byebug
-    # grams.each do |gram|
-    #   build_object(gram).comments[:comms] = comments(gram.id)
-    # end
-    grams = Instagrams.new(response).all_grams
+    build_object(parse(connection.get('users/self/media/recent/'))).data
   end
 
   def comments(id)
     response = connection.get("media/#{id}/comments")
-    Instagrams.new(response).comments.map do |comment|
-      build_object(comment)
+    comments = build_object(parse(response)).data
+    comments = comments.map do |comment|
+      comment[:text]
     end
+    comments
   end
 
   private
 
     def build_object(data)
       OpenStruct.new(data)
+    end
+
+    def parse(response)
+      JSON.parse(response.body, symbolize_names: true)
     end
 end
 
