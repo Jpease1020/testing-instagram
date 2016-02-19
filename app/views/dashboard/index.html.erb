@@ -27,7 +27,7 @@
             <li><%= comment.commenter %>: <%= comment.text %> <%= link_to 'X', comment_path(comment.id, gram_id: gram.id), method: 'delete' %></li>
           <% end %>
         </ul>
-        </div>
+      </div id='comment-box'>
         <%= form_tag(comments_path, :method => "post") do %>
             <%= text_field_tag :comment, params[:comment], placeholder: "make a comment" %>
             <%= hidden_field_tag 'gram_id', gram.id  %>

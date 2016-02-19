@@ -1,9 +1,9 @@
 class Comment
   attr_reader :id, :text, :commenter, :commenter_id
   def initialize(id, text, commenter, commenter_id)
-    @text = text
-    @id = id
-    @commenter = commenter
+    @text         = text
+    @id           = id
+    @commenter    = commenter
     @commenter_id = commenter_id
   end
 

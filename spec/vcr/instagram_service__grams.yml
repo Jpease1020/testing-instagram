@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/users/self/media/recent/?access_token=224650346.7d7f826.ef7392aae6934a919523fc1e67582216
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '452'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 22:12:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=11a418aa30848f78704c7a1525c38daf; expires=Fri, 17-Feb-2017 22:12:47
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 23:12:47 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCeed42d31bb755533827e7bce7093b3930fa6faed8bb34fcdbe072f2d6d862d0f%3A01Sqh1kvREkuJ8bx8OzVzcB0oxbPTYTq%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455919967%7D%7D;
+        expires=Thu, 19-May-2016 22:12:47 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '827'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {}, "meta": {"code": 200}, "data": [{"attribution":
+        null, "tags": [], "type": "image", "location": null, "comments": {"count":
+        3}, "filter": "Normal", "created_time": "1455732945", "link": "https://www.instagram.com/p/BB5ae2xhW8s/",
+        "likes": {"count": 4}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10299831_224883447855873_746858986_n.jpg?ig_cache_key=MTE4NzA5NjQ0NjM5NTMxMzk2NA%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/10299831_224883447855873_746858986_n.jpg?ig_cache_key=MTE4NzA5NjQ0NjM5NTMxMzk2NA%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/10299831_224883447855873_746858986_n.jpg?ig_cache_key=MTE4NzA5NjQ0NjM5NTMxMzk2NA%3D%3D.2",
+        "width": 612, "height": 612}}, "users_in_photo": [], "caption": {"created_time":
+        "1455732945", "text": "Sometimes not so much!", "from": {"username": "justinpease1",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "1187096449264218100"},
+        "user_has_liked": false, "id": "1187096446395313964_224650346", "user": {"username":
+        "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": null, "comments": {"count": 2}, "filter":
+        "Normal", "created_time": "1455732903", "link": "https://www.instagram.com/p/BB5aZrDhW8e/",
+        "likes": {"count": 3}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/12748265_1509135739393730_56510602_n.jpg?ig_cache_key=MTE4NzA5NjA5MDIxNTAxODI3MA%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/12748265_1509135739393730_56510602_n.jpg?ig_cache_key=MTE4NzA5NjA5MDIxNTAxODI3MA%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/12748265_1509135739393730_56510602_n.jpg?ig_cache_key=MTE4NzA5NjA5MDIxNTAxODI3MA%3D%3D.2",
+        "width": 612, "height": 612}}, "users_in_photo": [], "caption": {"created_time":
+        "1455732903", "text": "Sometimes they come out ok.", "from": {"username":
+        "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "1187096093151031246"},
+        "user_has_liked": false, "id": "1187096090215018270_224650346", "user": {"username":
+        "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": null, "comments": {"count": 1}, "filter":
+        "Normal", "created_time": "1348085545", "link": "https://www.instagram.com/p/PxRXEOhW7K/",
+        "likes": {"count": 1}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/11208265_1604105449828280_1973022690_n.jpg?ig_cache_key=Mjg0MDg0NjAzMzc4Mjk4NTcw.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/11208265_1604105449828280_1973022690_n.jpg?ig_cache_key=Mjg0MDg0NjAzMzc4Mjk4NTcw.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/11208265_1604105449828280_1973022690_n.jpg?ig_cache_key=Mjg0MDg0NjAzMzc4Mjk4NTcw.2",
+        "width": 612, "height": 612}}, "users_in_photo": [], "caption": {"created_time":
+        "1348085545", "text": "Love the message!", "from": {"username": "justinpease1",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "284084621011152336"},
+        "user_has_liked": false, "id": "284084603378298570_224650346", "user": {"username":
+        "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 22:12:47 GMT
+recorded_with: VCR 3.0.1
