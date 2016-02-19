@@ -2,11 +2,11 @@ class Instagram
   attr_reader :image_url, :caption, :likes_count, :id, :comments
 
   def initialize(image_url, caption, likes_count, id, comments)
-    @image_url = image_url
-    @caption = caption
+    @image_url   = image_url
+    @caption     = caption
     @likes_count = likes_count
-    @comments = comments
-    @id = id
+    @comments    = comments
+    @id          = id
   end
 
   def self.all(user)

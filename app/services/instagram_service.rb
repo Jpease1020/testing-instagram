@@ -4,7 +4,7 @@ class InstagramService
 
   def initialize(user)
     @connection = Faraday.new(url: 'https://api.instagram.com/v1/') do |faraday|
-      faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
+      faraday.adapter  Faraday.default_adapter 
       faraday.params[:access_token] = user.token
     end
   end
