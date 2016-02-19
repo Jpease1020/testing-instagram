@@ -1,11 +1,12 @@
 class Instagram
-  attr_reader :image_url, :caption, :likes_count, :comments
+  attr_reader :image_url, :caption, :likes_count, :id, :comments
 
-  def initialize(image_url, caption = nil, likes_count = nil, comments = nil)
+  def initialize(image_url, caption, likes_count, id, comments)
     @image_url = image_url
     @caption = caption
     @likes_count = likes_count
     @comments = comments
+    @id = id
   end
 
   def self.all(user)
@@ -14,6 +15,7 @@ class Instagram
       new(gram[:images][:standard_resolution][:url],
           gram[:caption][:text],
           gram[:likes][:count],
+          gram[:id],
           Instagram.get_comments(user, gram[:id])
           )
     end
@@ -24,13 +26,4 @@ class Instagram
     comments = InstagramService.new(user).comments(id)
   end
 
-  private
-
-    def build_object(data)
-      OpenStruct.new(data)
-    end
-
-    def parse(response)
-      JSON.parse(response.body, symbolize_names: true)
-    end
 end

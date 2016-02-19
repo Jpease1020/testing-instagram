@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get "/auth/instagram/callback", to: "sessions#create"
   delete 'logout', to: "sessions#destroy"
   resources :dashboard, only: [:index]
+  resources :followers, only: [:index, :show]
+  resources :comments, only: [:create]
 end

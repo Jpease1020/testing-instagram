@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <h2>"These are the people who follow you.  They are followers"</h2>
+  </div>
+</div>
+<div class="container">
+  <div class="row col-sm-12 col-md-12 col-lg-12">
+    <% @followers.each do |follower| %>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+          <%= image_tag follower.profile_picture, size: "150x150" %>
+          <%= follower.user_name %>
+          <%= follower.id %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

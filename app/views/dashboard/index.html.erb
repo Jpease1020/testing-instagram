@@ -7,6 +7,7 @@
       <ul>
         <h2>Hey <%= @user.username %></h2>
         <h5><%= @user.name %></h5>
+        <h5 id="followers-link"><%= link_to "Followers: ", followers_path %></h5>
       </ul>
     </div>
   </div>
@@ -25,6 +26,11 @@
             <%= comment %>
           <% end %>
         </div>
+        <%= form_tag(comments_path, :method => "post") do %>
+            <%= text_field_tag :comment, params[:comment], placeholder: "make a comment" %>
+            <%= hidden_field_tag 'gram_id', gram.id  %>
+            <%= submit_tag "Comment",class: "btn btn-default" %>
+          <% end %>
       </div>
     <% end %>
   </div>
