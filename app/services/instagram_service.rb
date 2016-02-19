@@ -14,12 +14,10 @@ class InstagramService
   end
 
   def comments(id)
-    response = connection.get("media/#{id}/comments")
-    comments = build_object(parse(response)).data
-    comments = comments.map do |comment|
+    comments = build_object(parse(connection.get("media/#{id}/comments"))).data
+    comments.map do |comment|
       comment[:text]
     end
-    comments
   end
 
   private
