@@ -7,11 +7,11 @@ class Comment
     @commenter_id = commenter_id
   end
 
-  def create_comment(user, comment, gram_id)
+  def self.create(user, comment, gram_id)
     InstagramService.new(user).create_comment(comment, gram_id)
   end
 
-  def destroy(user, media_id, comment_id)
+  def self.destroy(user, media_id, comment_id)
     InstagramService.new(user).delete_comment(media_id, comment_id)
   end
 end

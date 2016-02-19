@@ -24,7 +24,7 @@
         <div class="row col-sm-12 col-md-12 col-lg-12">
           <ul>
           <% gram.comments.each do |comment| %>
-            <li><%= comment.commenter %>: <%= comment.text %></li>
+            <li><%= comment.commenter %>: <%= comment.text %> <%= link_to 'X', comment_path(comment.id, gram_id: gram.id), method: 'delete' %></li>
           <% end %>
         </ul>
         </div>
