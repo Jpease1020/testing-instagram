@@ -26,6 +26,11 @@
             <%= comment %>
           <% end %>
         </div>
+        <%= form_tag(comments_path, :method => "post") do %>
+            <%= text_field_tag :comment, params[:comment], placeholder: "make a comment" %>
+            <%= hidden_field_tag 'gram_id', gram.id  %>
+            <%= submit_tag "Comment",class: "btn btn-default" %>
+          <% end %>
       </div>
     <% end %>
   </div>

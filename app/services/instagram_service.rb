@@ -20,6 +20,17 @@ class InstagramService
     end
   end
 
+  def create_comment(comment, id)
+    connection.post do |req|
+      req.url "media/#{id}/comments"
+      req.body = "text=#{comment}"
+    end
+  end
+
+  def followers
+    build_object(parse(connection.get("users/self/followed-by")))
+  end
+
   private
 
     def build_object(data)
@@ -30,28 +41,3 @@ class InstagramService
       JSON.parse(response.body, symbolize_names: true)
     end
 end
-
-
-
-# ## GET ##
-#
-# response = conn.get '/nigiri/sake.json'     # GET http://sushi.com/nigiri/sake.json
-# response.body
-#
-# conn.get '/nigiri', { :name => 'Maguro' }   # GET http://sushi.com/nigiri?name=Maguro
-#
-# conn.get do |req|                           # GET http://sushi.com/search?page=2&limit=100
-#   req.url '/search', :page => 2
-#   req.params['limit'] = 100
-# end
-#
-# ## POST ##
-#
-# conn.post '/nigiri', { :name => 'Maguro' }  # POST "name=maguro" to http://sushi.com/nigiri
-#
-# # post payload as JSON instead of "www-form-urlencoded" encoding:
-# conn.post do |req|
-#   req.url '/nigiri'
-#   req.headers['Content-Type'] = 'application/json'
-#   req.body = '{ "name": "Unagi" }'
-# end

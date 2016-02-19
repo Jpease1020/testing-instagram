@@ -1,5 +1,5 @@
-class FolloersController < ApplicationController
+class FollowersController < ApplicationController
   def index
-    @friends = Friend.all
+    @followers = Follower.all(current_user)
   end
 end

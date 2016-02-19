@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   delete 'logout', to: "sessions#destroy"
   resources :dashboard, only: [:index]
   resources :followers, only: [:index, :show]
+  resources :comments, only: [:create]
 end
